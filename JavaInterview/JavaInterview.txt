@@ -1,0 +1,150 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    1.) Why string objects are immutable in java?
+
+Because java uses the concept of string literal.Suppose there are 5 reference variables,all referes to one object "sachin".If one reference variable changes the value of the object, it will be affected to all the reference variables. That is why string objects are immutable in java.
+
+2.) Java String intern()
+
+String s1=new String("Rahul");
+String s2=s1;
+
+s1 --> point to heap area rahul object
+s2 --> point to heap area rahul object
+
+if you want to point s2 ref to string constant pool rahul obj then use intern()
+
+3.) Serialization - covert object to stream of bytes
+
+jvm takes care of Serialization
+
+4.)What is a volatile keyword in Java and how is it different from the synchronized method in Java?
+
+volatile int x=10;
+
+t1, t2, t3
+
+every thread one local copy is created
+
+5.) Java 8 new features
+
+	Normal Programming  -- 
+	public void add(int a, int b)
+	{
+		System.out.println(a+b);
+	}
+	Funct. Programming
+	(a,b) -> System.out.println(a+b);  - Lambda  exp
+	
+Lamda Expression - internally working on lambda
+(a,b) -> System.out.println(a+b);  - Lambda  exp
+Functional Interface
+
+   only one abstruct method
+   
+Different Operations On Streams-
+
+	Intermediate Operations:
+	
+	map: The map method is used to returns a stream consisting of the results of applying the given function to the elements of this stream.
+	List number = Arrays.asList(2,3,4,5);
+	List square = number.stream().map(x->x*x).collect(Collectors.toList());
+	
+	filter: The filter method is used to select elements as per the Predicate passed as argument.
+	List names = Arrays.asList("Reflection","Collection","Stream");
+	List result = names.stream().filter(s->s.startsWith("S")).collect(Collectors.toList());
+	
+	sorted: The sorted method is used to sort the stream.
+	
+	List names = Arrays.asList("Reflection","Collection","Stream");
+	List result = names.stream().sorted().collect(Collectors.toList());
+	
+	Terminal Operations:
+	
+	collect: The collect method is used to return the result of the intermediate operations performed on the stream.
+	
+	List number = Arrays.asList(2,3,4,5,3);
+	Set square = number.stream().map(x->x*x).collect(Collectors.toSet());
+	
+	forEach: The forEach method is used to iterate through every element of the stream.
+	
+	List number = Arrays.asList(2,3,4,5);
+	number.stream().map(x->x*x).forEach(y->System.out.println(y));
+	
+	reduce: The reduce method is used to reduce the elements of a stream to a single value.
+	The reduce method takes a BinaryOperator as a parameter.
+	
+	List number = Arrays.asList(2,3,4,5);
+	int even = number.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);
+
+Default Methods In Java 8 interface
+
+	Before Java 8, interfaces could have only abstract methods. The implementation of these methods has to be provided in a separate class. So, if a new method is to be added in an interface, then its implementation code has to be provided in the class implementing the same interface. To overcome this issue, Java 8 has introduced the concept of default methods which allow the interfaces to have methods with implementation without affecting the classes that implement the interface.
+
+Static Methods In Java 8 interface - null check , logging
+
+	public interface Vehicle {
+    
+    // regular / default interface methods
+    
+    static int getHorsePower(int rpm, int torque) {
+        return (rpm * torque) / 5252;
+    }
+	}
+Optional 
+
+Java Method References
+
+	Java provides a new feature called method reference in Java 8. Method reference is used to refer method of functional interface. It is compact and easy form of lambda expression. Each time when you are using lambda expression to just referring a method, you can replace your lambda expression with method reference. In this tutorial, we are explaining method reference concept in detail.
+
+	Types of Method References
+	
+	Reference to a static method. -- ContainingClass::staticMethodName  
+	Reference to an instance method. -- containingObject::instanceMethodName  
+	Reference to a constructor. -- ClassName::new  
+
+Difference Between Streams and Collections in Java
+
+Streams
+They use functional interfaces like lambda which makes it a good fit for programming language.
+Java streams support both sequential and parallel processing.
+
+Collections 
+They don’t use functional interfaces.
+It supports parallel processing and parallel processing can be very helpful in achieving high performance.
+
+What Is an API Gateway?
+An API gateway takes all API calls from clients, then routes them to the appropriate microservice with request routing, composition, and protocol translation. Typically it handles a request by invoking multiple microservices and aggregating the results, to determine the best path. It can translate between web protocols and web‑unfriendly protocols that are used internally.
+
+Difference between @RestController and @Controller Annotation in Spring MVC and REST
+The job of @Controller is to create a Map of the model object and find a view but @RestController simply returns the object and object data is directly written into HTTP response as JSON or XML.
+
+Logging -  SLF4J for logging and lib logback
+
+Difference Between Singleton Vs Static Class
+
+	static classes are not for anything that needs state. It is useful for putting a bunch of functions together i.e Math (or Utils in projects). So the class name just gives us a clue where we can find the functions and nothing more.
+
+	Singleton is my favorite pattern and I use it to manage something at a single point. It's more flexible than static classes and can maintain it's state. It can implement interfaces, inherit from other classes and allow inheritance.
+
+	My rule for choosing between static and singleton:
+
+	If there is a bunch of functions that should be kept together, then static is the choice. Anything else which needs single access to some resources, could be implemented as a singleton.
+	
+Design Patterns
+
+Creational - factory - abstract - builder - prototype - singleton
+Behavioral Design Patterns - observer - state - strategy - Mediator - Memento 
+Structure - Adaptor - Bridge - Composite - Facade - Flyweight
+J2EE - MVC
+
+IS-A Relationship vs HAS-A Relationship in Java
+
+Father --> class Son extends Father --> IS-A Relationship
+Car --> class Car { Engine eg=new Engine()} --> HAS-A Relationship
+
+
+
+Optional<Employee> emp = employeeList.stream()
+        .sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst();
+Stream<String> flatmapStream = listOfLists.stream().flatMap(list -> list.stream());
+
+  List<String> output = flatmapStream.collect(Collectors.toList());
