@@ -20,6 +20,11 @@
      sort always divides the array into two halves and takes linear time to merge two halves.
      Auxiliary Space: O(n)
      Algorithmic Paradigm: Divide and Conquer
+        
+     Best Case : O(nlogn)
+     Average Case : O(nlogn)
+     Worst Case : O(nlogn)  
+     Space Complexity: Worst Case : O(n)
  */
 
 package sorting;
