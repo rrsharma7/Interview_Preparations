@@ -1,3 +1,7 @@
+
+//Time Complexity: O(n2) as there are two nested loops.
+//Auxiliary Space: O(1) 
+
 package sorting;
 class SelectionSort {
 	void sort(int arr[]) {
