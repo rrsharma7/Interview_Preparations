@@ -5,32 +5,30 @@ import java.util.List;
 
 public class RainWaterTrapped {
 
-	public int trap(final List<Integer> A) {
-		int n = A.size();
-		int lmax = A.get(0);
-		int rmax = A.get(n - 1);
-		int lo = 0, hi = n - 1, res = 0;
-		while (lo <= hi) {
-			if (lmax <= rmax) {
-				res += Math.max(0, lmax - A.get(lo));
-				lmax = Math.max(lmax, A.get(lo));
-				lo++;
-			} else {
-				res += Math.max(0, rmax - A.get(hi));
-				rmax = Math.max(rmax, A.get(hi));
-				hi--;
-			}
+	public int trap(final int[] A) 
+	{
+		int n = A.length;
+		int left[] = new int[n];
+		int right[] = new int[n];
+		left[0] = A[0];
+		for (int i = 1; i < n; i++) {
+			left[i] = Math.max(left[i - 1], A[i]);
 		}
-		return res;
+		right[n - 1] = A[n - 1];
+		for (int i = n - 2; i >= 0; i--) {
+			right[i] = Math.max(right[i + 1], A[i]);
+		}
+		int ans = 0;
+		for (int i = 0; i < n; i++) {
+			ans=ans+Math.min(left[i],right[i])-A[i];
+		}
+		return ans;
 	}
 
-	public static void main(String[] args) {
-		RainWaterTrapped rwt = new RainWaterTrapped();
-		ArrayList<Integer> list = new ArrayList<Integer>();
-		list.add(0);
-		list.add(1);
-		list.add(0);
-		list.add(2);
-		rwt.trap(list);
+	public static void main(String[] args) 
+	{
+	RainWaterTrapped rwt = new RainWaterTrapped();
+	int a[] = { 0, 1, 0, 2 };
+	rwt.trap(a);
 	}
 }
