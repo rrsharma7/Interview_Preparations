@@ -77,7 +77,10 @@ Different Operations On Streams-
 
 Default Methods In Java 8 interface
 
-	Before Java 8, interfaces could have only abstract methods. The implementation of these methods has to be provided in a separate class. So, if a new method is to be added in an interface, then its implementation code has to be provided in the class implementing the same interface. To overcome this issue, Java 8 has introduced the concept of default methods which allow the interfaces to have methods with implementation without affecting the classes that implement the interface.
+Before Java 8, interfaces could have only abstract methods. The implementation of these methods has to be provided in a separate class. 
+So, if a new method is to be added in an interface, then its implementation code has to be provided in the class implementing the same 
+interface. To overcome this issue, Java 8 has introduced the concept of default methods which allow the interfaces to have methods 
+with implementation without affecting the classes that implement the interface.
 
 Static Methods In Java 8 interface - null check , logging
 
@@ -93,7 +96,10 @@ Optional
 
 Java Method References
 
-	Java provides a new feature called method reference in Java 8. Method reference is used to refer method of functional interface. It is compact and easy form of lambda expression. Each time when you are using lambda expression to just referring a method, you can replace your lambda expression with method reference. In this tutorial, we are explaining method reference concept in detail.
+Java provides a new feature called method reference in Java 8. Method reference is used to refer method of 
+functional interface. It is compact and easy form of lambda expression. Each time when you are using lambda 
+expression to just referring a method, you can replace your lambda expression with method reference. In this 
+tutorial, we are explaining method reference concept in detail.
 
 	Types of Method References
 	
