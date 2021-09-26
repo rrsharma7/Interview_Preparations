@@ -1,3 +1,5 @@
+// TC - O(N) 
+// SC - O(1)
 package SearchingAlgorithms;
 
 class LinearSearch {
