@@ -73,7 +73,7 @@ public class AggressiveCows {
 		int high = maxDistancePossible;
 
 		// Apply the binary search algo starting from 1 and going to
-		// max_distance_possible two cows can take.
+		// maxdistancepossible two cows can take.
 		int res = 0;
 		while (low <= high) {
 
