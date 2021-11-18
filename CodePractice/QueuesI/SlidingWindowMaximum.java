@@ -83,28 +83,31 @@ package QueuesI;
 
 class SlidingWindowMaximum {
 
+	// ans = 3, 3, 5, 5, 6, 7
 	public int[] slidingMaximum(final int[] A, int B) {
-		int[] result = new int[A.length - B + 1];
-		Integer max = Integer.MIN_VALUE;
+		Deque<Integer> dq = new LinkedList<>();
+		int ans[] = new int[A.length - B + 1];
+		int i = 0;
+		for (; i < B; i++) {
+			while (!dq.isEmpty() && A[dq.peekLast()] <= A[i]) {
+				dq.removeLast();
+			}
+			dq.addLast(i);
 
-		for (int i = 0; i < A.length; i++) {
-			max = Math.max(max, A[i]);
-
-			if (i < B - 1) {
-				continue;
-			}
-			result[i - B + 1] = max;
-			if (max != A[i - B + 1]) {
-				continue;
-			}
-			max = Integer.MIN_VALUE;
-			for (int j = (i - B + 2); j <= i; j++) {
-				max = Math.max(max, A[j]);
-			}
 		}
-		return result;
+		for (; i < A.length; i++) {
+			ans[i - B] = A[dq.peekFirst()];
+			while (!dq.isEmpty() && dq.peekFirst() <= i - B) {
+				dq.removeFirst();
+			}
+			while (!dq.isEmpty() && A[dq.peekLast()] <= A[i]) {
+				dq.removeLast();
+			}
+			dq.addLast(i);
+		}
+		ans[i-B]=A[dq.peekFirst()];
+		return ans;
 	}
-
 	public static void main(String args[]) {
 		SlidingWindowMaximum swm = new SlidingWindowMaximum();
 		int a[] = { 1, 3, -1, -3, 5, 3, 6, 7 };
