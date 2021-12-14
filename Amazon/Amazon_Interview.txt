@@ -1,0 +1,13 @@
+https://www.amazon.in/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/ref=sr_1_3?dchild=1&keywords=Grokking+Algorithms%3A+An+Illustrated+Guide+for+Programmers+and+Other+Curious+People&qid=1632653265&qsid=258-8747709-8599202&sr=8-3&sres=1617292230&srpt=ABIS_BOOK 
+
+https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245/ref=sr_1_1?dchild=1&keywords=designing+data-intensive+applications&qid=1634300400&qsid=258-8747709-8599202&sr=8-1&sres=9352135245%2C1558608435%2C1786465094%2C1599046997%2CB010ORQ8BS%2C1782165444%2C1493919040%2CB0953S82CF%2C1736049100%2CB07JF8BM7N%2C9332901384%2CB0855XQZ44%2C1636067417%2C9352134281%2CB07MYKTY8W%2C9351199355&srpt=ABIS_BOOK 
+
+https://www.amazon.com/dp/B08CMF2CQF?psc=1&ref=ppx_yo2_dt_b_product_details 
+
+https://www.amazon.com/dp/1736417916?psc=1&ref=ppx_yo2_dt_b_product_details 
+
+https://www.amazon.com/dp/1492082791?psc=1&ref=ppx_yo2_dt_b_product_details 
+
+https://www.amazon.in/Head-First-Design-Patterns-Object-Oriented/dp/9385889753/ref=sr_1_1?dchild=1&keywords=head+first+design+pattern&qid=1634300487&qsid=258-8747709-8599202&sr=8-1&sres=9385889753%2C0596007124%2C0596102143%2CB07FVRS9QN%2CB07DYTN96R%2C8184042213%2C9352136772%2C1515367177%2CB00CEKY2BM%2C1435291794%2CB009Z45JAI%2C818404657X%2C9352134826%2C9351103536%2C8184043686%2C8173666024 
+
+https://www.amazon.in/Domain-Driven-Tacking-Complexity-Software/dp/8131724468/ref=sr_1_2?dchild=1&keywords=domain+driven+design&qid=1634300753&qsid=258-8747709-8599202&sr=8-2&sres=B00794TAUG%2C8131724468%2C9332545480%2C9332585369%2CB07C5WSR9B%2C1784394327%2CB00J5206AS%2C1118714709%2C1484245423%2CB07K5W7CTZ%2CB00K6HC29O%2CB08JP7KZ3Y%2CB076W428NG%2C1934356441%2C0470147563%2C1787284948 https://github.com/prasadgujar/low-level-design-primer/blob/master/resources.md https://www.youtube.com/c/TechDummiesNarendraL
