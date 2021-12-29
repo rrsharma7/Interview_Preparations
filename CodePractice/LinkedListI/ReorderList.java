@@ -62,7 +62,7 @@ Explanation 2:
 
 */
 
-package LinkedList1;
+package LinkedListI;
 
 class ReorderList {
 

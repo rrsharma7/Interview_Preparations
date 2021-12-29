@@ -1,10 +1,6 @@
 /**
  Q1. Reverse Link List II
-Unsolved
-character backgroundcharacter
-Stuck somewhere?
-Ask for help from a TA & get it resolved
-Get help from TA
+
 Problem Description
 
 Reverse a linked list A from position B to C.
@@ -76,7 +72,7 @@ Explanation 2:
 
 */
 
-package LinkedList1;
+package LinkedListI;
 
 class ReverseLinkListII {
 

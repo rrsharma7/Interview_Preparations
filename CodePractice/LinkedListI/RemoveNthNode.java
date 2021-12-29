@@ -66,9 +66,7 @@ In the second example, 1 is the first and the last element.
 
 */
 
-package LinkedList1;
-
-import java.util.Stack;
+package LinkedListI;
 
 class RemoveNthNode {
 

@@ -1,10 +1,6 @@
 /**
 Q2. Middle element of linked list
-Unsolved
-character backgroundcharacter
-Stuck somewhere?
-Ask for help from a TA & get it resolved
-Get help from TA
+
 Problem Description
 
 Given a linked list of integers. Find and return the middle element of the linked list.
@@ -65,7 +61,7 @@ Explanation 2:
 
 */
 
-package LinkedList1;
+package LinkedListI;
 
 class MiddleElementOfLinkedList {
 

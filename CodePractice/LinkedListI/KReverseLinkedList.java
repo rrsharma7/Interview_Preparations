@@ -1,10 +1,6 @@
 /**
  Q2. K reverse linked list
-Solved
-character backgroundcharacter
-Stuck somewhere?
-Ask for help from a TA & get it resolved
-Get help from TA
+
 Problem Description
 
 Given a singly linked list A and an integer B, reverse the nodes of the list B at a time and return modified linked list.
@@ -72,7 +68,7 @@ Explanation 2:
 
 */
 
-package LinkedList1;
+package LinkedListI;
 
 class KReverseLinkedList {
 

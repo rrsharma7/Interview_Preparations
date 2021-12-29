@@ -54,7 +54,7 @@ Explanation 1:
 
 */
 
-package LinkedList1;
+package LinkedListI;
 
 class RemoveDuplicatesFromSortedList {
 
