@@ -63,7 +63,7 @@ Explanation 2:
  The Preoder Traversal of the given tree is [6, 3, 2, 1].
 */
 
-package Tree1;
+package TreeI;
 
 import java.util.*;
 

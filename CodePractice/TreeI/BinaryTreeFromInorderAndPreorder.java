@@ -62,7 +62,7 @@ Explanation 1:
  Create the binary tree and return the root node of the tree.
 */
 
-package Tree1;
+package TreeI;
 
 import java.util.*;
 

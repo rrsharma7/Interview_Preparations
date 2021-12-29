@@ -66,7 +66,7 @@ Explanation 1:
  Return the 2D array. Each row denotes the traversal of each level.
 */
 
-package Tree1;
+package TreeI;
 
 import java.util.*;
 
