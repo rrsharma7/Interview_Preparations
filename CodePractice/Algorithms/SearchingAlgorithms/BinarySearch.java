@@ -6,7 +6,7 @@
 //     if low > high
 //         return False 
 //     else
-//         mid = (low + high) / 2 
+//         int mid = l + (r - l) / 2;
 //         if x == arr[mid]
 //             return mid
 //         else if x > arr[mid]        // x is on the right side
