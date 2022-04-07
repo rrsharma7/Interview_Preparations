@@ -2,6 +2,17 @@
 	Time Complexity: T(n) = T(n/2) + c  -> Theta(Logn)
 	Space Complexity: Worst Case : O(1)
 */
+// binarySearch(arr, x, low, high)
+//     if low > high
+//         return False 
+//     else
+//         int mid = l + (r - l) / 2;
+//         if x == arr[mid]
+//             return mid
+//         else if x > arr[mid]        // x is on the right side
+//             return binarySearch(arr, x, mid + 1, high)
+//         else                               // x is on the right side
+//             return binarySearch(arr, x, low, mid - 1)
 package SearchingAlgorithms;
 class BinarySearch {
 	int binarySearch(int arr[], int l, int r, int searchElement) {
