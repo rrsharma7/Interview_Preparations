@@ -8,6 +8,7 @@ import java.util.Queue;
 public class BinaryTreeLevelOrderTraversal {
 
 	static class TreeNode {
+
 		int val;
 		TreeNode left;
 		TreeNode right;
@@ -16,35 +17,34 @@ public class BinaryTreeLevelOrderTraversal {
 			this.val = val;
 			this.left = null;
 			this.right = null;
-		} 
+		}
 	}
 
 	public List<List<Integer>> inorderTraversal(TreeNode root) {
 		List<List<Integer>> list = new ArrayList<>();
-		if (root == null) {
+		if (root == null)
 			return list;
-		}
 
-		Queue<TreeNode> queue = new LinkedList<TreeNode>();
+		Queue<TreeNode> queue = new LinkedList<>();
 		queue.add(root);
 
 		while (!queue.isEmpty()) {
+			List<Integer> ll = new ArrayList<>();
 			int size = queue.size();
-			List<Integer> li = new ArrayList<>();
-
 			while (size != 0) {
+
 				TreeNode curr = queue.poll();
-				li.add(curr.val);
-				if (curr.left != null) {
+				ll.add(curr.val);
+				if (curr.left != null)
 					queue.add(curr.left);
-				}
-				if (curr.right != null) {
+				if (curr.right != null)
 					queue.add(curr.right);
-				}
 				size--;
+
 			}
-			list.add(li);
+			list.add(ll);
 		}
+
 		return list;
 	}
 
