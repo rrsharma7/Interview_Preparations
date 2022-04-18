@@ -1,4 +1,4 @@
-package Leetcode.BinarySearch;
+package LeetCode.BinarySearch;
 
 public class FindMinimumRotatedArray {
 

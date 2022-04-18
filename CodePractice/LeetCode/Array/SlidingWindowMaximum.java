@@ -1,5 +1,4 @@
-package Leetcode.Array;
-
+package LeetCode.Array;
 import java.util.*;
 
 public class SlidingWindowMaximum {

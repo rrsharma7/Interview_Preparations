@@ -1,4 +1,4 @@
-package problemsolving4;
+package ProblemSolving4;
 
 import java.util.HashMap;
 

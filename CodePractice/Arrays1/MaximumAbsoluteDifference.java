@@ -1,4 +1,4 @@
-package arrays1;
+package Arrays1;
 
 public class MaximumAbsoluteDifference {
 

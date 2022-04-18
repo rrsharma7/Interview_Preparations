@@ -1,4 +1,4 @@
-package problemsolving3;
+package ProblemSolving3;
 
 public class ConstructArray {
 

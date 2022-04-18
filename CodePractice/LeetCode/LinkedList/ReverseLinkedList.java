@@ -1,5 +1,5 @@
 
-package Leetcode.LinkedList;
+package LeetCode.LinkedList;
 
 class ReverseLinkedList {
 

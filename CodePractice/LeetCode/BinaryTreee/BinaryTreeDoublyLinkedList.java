@@ -1,4 +1,4 @@
-package Leetcode.BinaryTreee;
+package LeetCode.BinaryTreee;
 
 import java.util.Stack;
 

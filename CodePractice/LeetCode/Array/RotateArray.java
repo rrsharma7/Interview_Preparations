@@ -1,4 +1,4 @@
-package Leetcode.Array;
+package LeetCode.Array;
 
 public class RotateArray {
 

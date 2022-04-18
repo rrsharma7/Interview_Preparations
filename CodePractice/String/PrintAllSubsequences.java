@@ -1,4 +1,4 @@
-package lovebabbar.string;
+package String;
 
 class PrintAllSubsequences {
 

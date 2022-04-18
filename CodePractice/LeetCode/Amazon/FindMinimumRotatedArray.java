@@ -1,4 +1,4 @@
-package Leetcode.Amazon;
+package LeetCode.Amazon;
 
 public class FindMinimumRotatedArray {
 

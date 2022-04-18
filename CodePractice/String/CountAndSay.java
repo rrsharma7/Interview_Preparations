@@ -1,4 +1,4 @@
-package lovebabbar.string;
+package String;
 
 //Java program to find n'th
 //term in look and say sequence

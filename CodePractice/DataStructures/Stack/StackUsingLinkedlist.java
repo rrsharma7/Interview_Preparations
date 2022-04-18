@@ -1,6 +1,6 @@
 //TC - O(N) ACCESSING, O(N) SEARCH, O(1) INSERTION, O(1) DELETION
 //SC - O(N)
-package javachampion;
+package DataStructures.Stack;
 
 import static java.lang.System.exit;
 

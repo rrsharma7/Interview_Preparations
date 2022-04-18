@@ -1,4 +1,4 @@
-package javachampion;
+package DataStructures.Queue;
 
 class QNode {
 	int data;

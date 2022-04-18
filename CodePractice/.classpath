@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="BasicOfJava/|Recursion/|Algorithms/|Algorithms/SortingAlgorithms/" kind="src" path=""/>
+	<classpathentry excluding="SortingAlgorithms/" kind="src" path="Algorithms"/>
+	<classpathentry kind="src" path="Algorithms/SortingAlgorithms"/>
+	<classpathentry kind="src" path="BasicOfJava"/>
+	<classpathentry kind="src" path="Recursion"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

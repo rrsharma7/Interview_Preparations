@@ -1,4 +1,4 @@
-package lovebabbar.string;
+package String;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package Leetcode.BinarySearchTree;
+package LeetCode.BinarySearchTree;
 
 public class DeleteNodeInBST {
 	static class TreeNode {

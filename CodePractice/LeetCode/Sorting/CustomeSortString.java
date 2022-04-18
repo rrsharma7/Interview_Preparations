@@ -1,4 +1,4 @@
-package Leetcode.Sorting;
+package LeetCode.Sorting;
 
 public class CustomeSortString {
 

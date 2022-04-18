@@ -1,4 +1,4 @@
-package basicsofstorage;
+package BasicsOfStorage;
 
 import java.util.Stack;
 

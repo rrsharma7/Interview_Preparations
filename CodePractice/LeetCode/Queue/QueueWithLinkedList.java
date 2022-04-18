@@ -1,4 +1,4 @@
-package Leetcode.Queue;
+package LeetCode.Queue;
 
 class QNode {
 	int data;

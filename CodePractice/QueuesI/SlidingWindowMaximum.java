@@ -81,6 +81,8 @@ Explanation 2:
 
 package QueuesI;
 
+import java.util.*;
+
 class SlidingWindowMaximum {
 
 	// ans = 3, 3, 5, 5, 6, 7

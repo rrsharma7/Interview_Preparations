@@ -1,4 +1,4 @@
-package arrays2;
+package Arrays2;
 
 public class VImpLargestSumSubarrayKadaneAlgo {
 

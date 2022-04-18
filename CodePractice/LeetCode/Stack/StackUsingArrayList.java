@@ -1,4 +1,4 @@
-package Leetcode.Stack;
+package LeetCode.Stack;
 
 public class StackUsingArrayList {
 

@@ -1,4 +1,4 @@
-package problemsolving2;
+package ProblemSolving2;
 
 public class EquilibriumIndex {
 

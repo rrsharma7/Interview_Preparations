@@ -28,6 +28,9 @@
  */
 
 package sorting;
+
+import java.util.Arrays;
+
 class MergeSort {
 void merge(int arr[], int l, int m, int r) 
 {

@@ -1,4 +1,4 @@
-package Leetcode.Graph;
+package LeetCode.Graph;
 
 //An Iterative Java program to do DFS traversal from
 //a given source vertex. DFS(int s) traverses vertices

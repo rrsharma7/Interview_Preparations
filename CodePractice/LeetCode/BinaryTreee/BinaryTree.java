@@ -1,4 +1,4 @@
-package Leetcode.BinaryTreee;
+package LeetCode.BinaryTreee;
 
 class TreeNode {
 	int val;

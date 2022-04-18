@@ -1,4 +1,4 @@
-package Leetcode.String;
+package LeetCode.String;
 
 class LargestString {
 
