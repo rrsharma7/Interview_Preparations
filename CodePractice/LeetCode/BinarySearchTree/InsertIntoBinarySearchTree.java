@@ -5,13 +5,13 @@ public class InsertIntoBinarySearchTree {
 		int val;
 		TreeNode left;
 		TreeNode right;
-
-		TreeNode(int val) {
-			this.val = val;
-			this.left = null;
-			this.right = null;
+		TreeNode(int val)
+		{
+			this.val=val;
+			this.left=null;
+			this.right=null;
 		}
-
+		
 	}
 
 	public TreeNode insertIntoBST(TreeNode root, int data) {
@@ -34,13 +34,13 @@ public class InsertIntoBinarySearchTree {
 		root.right = new TreeNode(7);
 		root.left.left = new TreeNode(1);
 		root.left.right = new TreeNode(3);
-		TreeNode treeNode=iibt.insertIntoBST(root, 5);
-		System.out.println("root="+treeNode.val);
-		System.out.println("left="+treeNode.left.val);
-		System.out.println("right="+treeNode.right.val);
-		System.out.println("left.left="+treeNode.left.left.val);
-		System.out.println("left.right="+treeNode.left.right.val);
-		System.out.println("right.left="+treeNode.right.left.val);
+		TreeNode treeNode = iibt.insertIntoBST(root, 5);
+		System.out.println("root=" + treeNode.val);
+		System.out.println("left=" + treeNode.left.val);
+		System.out.println("right=" + treeNode.right.val);
+		System.out.println("left.left=" + treeNode.left.left.val);
+		System.out.println("left.right=" + treeNode.left.right.val);
+		System.out.println("right.left=" + treeNode.right.left.val);
 
 	}
 }

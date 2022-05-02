@@ -1,7 +1,7 @@
 
 package LeetCode.LinkedList;
 
-class RemoveNthNodeFromEndOfList {
+class RotateLinkedList {
 
 	static class ListNode {
 		int data;
@@ -31,22 +31,27 @@ class RemoveNthNodeFromEndOfList {
 		}
 		return head;
 	}
-  // TC - O(L) SC - O(1)
-	 public ListNode removeNthFromEnd(ListNode head, int n) {
-		 ListNode dummy=new ListNode(-1);
-		 dummy.next=head;
-		 ListNode first=dummy;
-		 ListNode second=dummy;
-		 while(n-->=0)
-			first=first.next;
-		 while(first!=null) {
-			 first=first.next;
-			 second=second.next;
-		 }
-		 second.next=second.next.next;
-		return dummy.next;
-	        
-	    }
+
+	public ListNode rotateRight(ListNode head, int k) {
+		if (head == null || head.next == null || k==0)
+			return head;
+		ListNode temp = head;
+		int c = 1;
+		while (temp.next != null) {
+			c++;
+			temp = temp.next;
+		}
+		k = k % c;
+		temp.next = head; //12345
+		for (int i = 0; i < c - k; i++)
+		{
+			temp = temp.next; //123
+		}
+		head = temp.next; 
+		temp.next = null;
+		return head;
+	}
+
 	static void display(ListNode head) {
 		ListNode temp = head;
 		while (temp != null) {
@@ -57,7 +62,7 @@ class RemoveNthNodeFromEndOfList {
 	}
 
 	public static void main(String args[]) {
-		RemoveNthNodeFromEndOfList rnnode = new RemoveNthNodeFromEndOfList();
+		RotateLinkedList krll = new RotateLinkedList();
 		ListNode head = null;
 
 		head = create(head, 1);
@@ -66,10 +71,11 @@ class RemoveNthNodeFromEndOfList {
 		head = create(head, 4);
 		head = create(head, 5);
 
+
 		System.out.print("Linked list before modification: \n");
 		display(head);
 
-		head = rnnode.removeNthFromEnd(head,2);
+		head = krll.rotateRight(head,2);
 		System.out.print("Linked list after modification: \n");
 		display(head);
 	}

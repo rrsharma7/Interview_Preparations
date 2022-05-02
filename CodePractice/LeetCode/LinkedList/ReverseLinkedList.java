@@ -3,6 +3,8 @@ package LeetCode.LinkedList;
 
 class ReverseLinkedList {
 
+	
+	
 	static class ListNode {
 		int data;
 		ListNode next;
@@ -32,6 +34,7 @@ class ReverseLinkedList {
 		return head;
 	}
 
+	//TC - O(N) SC - O(1)
 	public ListNode reverseList(ListNode node) {
 		ListNode prev = null;
 		ListNode currentNode = node;

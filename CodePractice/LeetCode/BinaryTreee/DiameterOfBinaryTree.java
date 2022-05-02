@@ -16,23 +16,26 @@ public class DiameterOfBinaryTree
 
 	}
 
-	public int diameterOfBinaryTree(TreeNode root) {
+	private int diameter;
+    public int diameterOfBinaryTree(TreeNode root) {
+        diameter = 0;
+        longestPath(root);
+        return diameter;
+    }
+    private int longestPath(TreeNode node){
+        if(node == null) return 0;
+        // recursively find the longest path in
+        // both left child and right child
+        int leftPath = longestPath(node.left);
+        int rightPath = longestPath(node.right);
 
-		int[] maxi = new int[1];
-		height(root, maxi);
-		return maxi[0];
+        // update the diameter if left_path plus right_path is larger
+        diameter = Math.max(diameter, leftPath + rightPath);
 
-	}
-
-	public int height(TreeNode root, int[] maxi) {
-		if (root == null) {
-			return 0;
-		}
-		int lh = height(root.left, maxi);
-		int rh = height(root.right, maxi);
-		maxi[0] = Math.max(maxi[0], lh + rh);
-		return 1 + Math.max(lh, rh);
-	}
+        // return the longest one between left_path and right_path;
+        // remember to add 1 for the path connecting the node and its parent
+        return Math.max(leftPath, rightPath) + 1;
+    }
 
 	public static void main(String[] s) {
 		DiameterOfBinaryTree dbt = new DiameterOfBinaryTree();
